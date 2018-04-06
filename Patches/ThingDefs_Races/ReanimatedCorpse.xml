@@ -21,7 +21,7 @@
 	
 	<Operation Class="PatchOperationAddModExtension">
 		<success>Always</success>
-		<xpath>*/AlienRace.ThingDef_AlienRace[defName="ReanimatedCorpse"]</xpath>
+		<xpath>*/ThingDef[defName="ReanimatedCorpse"]</xpath>
 		<value>
 			<li Class="CombatExtended.RacePropertiesExtensionCE">
 				<bodyShape>Humanoid</bodyShape>
@@ -31,7 +31,7 @@
 
 	<Operation Class="PatchOperationReplace">
 		<success>Always</success>
-		<xpath>*/AlienRace.ThingDef_AlienRace[defName="ReanimatedCorpse"]/tools</xpath>
+		<xpath>*/ThingDef[defName="ReanimatedCorpse"]/tools</xpath>
 		<value>
 			<tools>
 				<li Class="CombatExtended.ToolCE">
@@ -78,11 +78,11 @@
 		<success>Always</success>
 		<operations>
 			<li Class="PatchOperationTest">
-				<xpath>*/AlienRace.ThingDef_AlienRace[defName="ReanimatedCorpse"]/comps</xpath>
+				<xpath>*/ThingDef[defName="ReanimatedCorpse"]/comps</xpath>
 				<success>Invert</success>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>*/AlienRace.ThingDef_AlienRace[defName="ReanimatedCorpse"]</xpath>
+				<xpath>*/ThingDef[defName="ReanimatedCorpse"]</xpath>
 				<value>
 					<comps />
 				</value>
@@ -92,7 +92,7 @@
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>*/AlienRace.ThingDef_AlienRace[defName="ReanimatedCorpse"]/comps</xpath>
+		<xpath>*/ThingDef[defName="ReanimatedCorpse"]/comps</xpath>
 		<value>
 			<li>
 			  <compClass>CombatExtended.CompPawnGizmo</compClass>
@@ -100,6 +100,6 @@
 			<li Class="CombatExtended.CompProperties_Suppressable" />
 		</value>
 	</Operation>
-
+	
 </Patch>
 
