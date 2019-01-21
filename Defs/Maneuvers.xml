@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ToolCapacityDef>
+		<defName>Cults_Psionic</defName>
+		<label>slashing</label>
+	</ToolCapacityDef>
+
+  <ManeuverDef>
+    <defName>Cults_Psionic</defName>
+    <requiredCapacity>Cults_Psionic</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttack</verbClass>
+      <meleeDamageDef>Cults_Psionic</meleeDamageDef>
+    </verb>
+    <combatLogRules>Maneuver_Slash</combatLogRules>
+  </ManeuverDef>
+
+
+</Defs>
